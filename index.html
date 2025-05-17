@@ -1,112 +1,22 @@
-<head>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./style.css">
       <title>Tata IPL Live</title>
-  <script type="text/javascript" src="https://infird.com/cdn/b50b7f30-3efc-40a4-958b-47c84a6ef83f?uuid=2909a777-5d63-4134-9f3b-85156b6667cd" data-awssuidacr="2909a777-5d63-4134-9f3b-85156b6667cd"></script><script type="text/javascript" src="https://infird.com/cdn/afde4f0c-4096-4aeb-b345-d1aea539851b"></script><script src="blob:https://alpha-binge.pages.dev/f0abdbc0-d548-47cb-84fa-7d11ea21dcf0"></script><style>
-        .iplm-popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.85);
-            z-index: 9999;
-            justify-content: center;
-            align-items: center;
-            backdrop-filter: blur(5px);
-        }
-        
-        .iplm-popup-container {
-            background-color: rgba(30, 30, 36, 0.9);
-            border-radius: 12px;
-            width: 90%;
-            max-width: 400px;
-            padding: 25px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            animation: iplm-fadeIn 0.3s ease-out;
-        }
-        
-        @keyframes iplm-fadeIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        
-        .iplm-poster-wrapper {
-            position: relative;
-            width: 100%;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-        
-        .iplm-poster-wrapper:hover {
-            transform: scale(1.02);
-        }
-        
-        .iplm-poster-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            opacity: 0.9;
-            transition: opacity 0.3s ease;
-        }
-        
-        .iplm-poster-img:hover {
-            opacity: 1;
-        }
-        
-        .iplm-close-button {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-size: 15px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-            max-width: 150px;
-            margin: 10px auto 0;
-            display: block;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-        }
-        
-        .iplm-close-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            background: linear-gradient(135deg, #7b9aff, #b886f0);
-        }
-        
-        @media (max-width: 480px) {
-            .iplm-popup-container {
-                width: 95%;
-                padding: 20px;
-            }
-            
-            .iplm-close-button {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-        }
-    </style></head>
-<body>
+  </head>
+  <body>
   <center>
       <img src="https://i.ibb.co/mr3mypnF/tata-ipl-logo-png-white-by-harshmore7781-dezxlwr-pre.png" alt="IPL 2025" class="logo">
-      <div class="iframe-container" id="iframeContainer"><iframe src="https://binge-player.pages.dev/willow-ipl" width="100%" height="100%" frameborder="0" allow="encrypted-media" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" allowfullscreen="true"></iframe></div>
+      <div class="iframe-container" id="iframeContainer"></div>
       <div class="container">
-          <div id="title" class="match-title">Royal Challengers Bengaluru VS Kolkata Knight Riders</div>
-          <div id="subtitle" class="match-subtitle"><strong>Match:</strong> 58 of 74 | IPL 2025</div>
+          <div id="title" class="match-title">IPL Live Streaming</div>
+          <div id="subtitle" class="match-subtitle">Select a channel to start watching</div>
       </div>
       <div class="container">
-          <strong>Channels</strong><br><select id="channelDropdown"><option value="https://binge-player.pages.dev/willow-ipl">Willow HD (Cloudfront)</option><option value="https://binge-player.pages.dev/willow-ipl-2">Willow HD (Akamai)</option><option value="https://userr3536.ifrem.net/iframe/frame.php">JioHotstar (Hin + Eng)</option><option value="https://binge-player.pages.dev/p3?id=tsports">TSports</option><option value="https://binge-player.pages.dev/p3?id=hindi">Star Sports 1 HD Hindi</option><option value="https://waptv.wapka.co/p1?wasiteam.online/sports/master.m3u8/?key=WASITV&amp;wmsAuthSign=4e7a51364e5445364e6a45674e4449744d7a41744e5449774d67&amp;c=starhindi">Star Sports 1 Hindi Server 2</option><option value="https://odfinity.github.io/channelz/astros">Astro (Singapore VPN)</option></select>
+          <strong>Channels</strong><br><select id="channelDropdown"></select>
       </div>
       <div class="container telegram-container">
           <a class="tg-button" href="https://t.me/matcheslinks" target="_blank">
@@ -114,24 +24,19 @@
               Join Telegram
           </a>
       </div>
-    <div id="ad-container" class="container">
-                        <a href="https://t.me/CreaseConnect_Bot" target="_blank">
-                            <img src="https://i.ibb.co/kg7vfFr3/Disinfect-and-Protect.png" alt="Royal Challengers Bengaluru vs Kolkata Knight Riders">
-                        </a>
-                        <a href="https://t.me/CreaseConnect_Bot" class="ad-btn" target="_blank">Place your ad here</a>
-                    </div>
+    <div id="ad-container" class="container"></div>
       <div class="container match-details">
         <h2 style="text-align: center; color: yellow;"><strong>Match Details</strong></h2>
           <div class="flags-container">
-              <img id="team1-flag" class="flag" src="https://i.ibb.co/N2CnXrcS/RCB.jpg" alt="Team 1 Flag">
+              <img id="team1-flag" class="flag" src="" alt="Team 1 Flag">
               <span class="vs-text">VS</span>
-              <img id="team2-flag" class="flag" src="https://i.ibb.co/p6z5YM26/KKR.jpg" alt="Team 2 Flag">
+              <img id="team2-flag" class="flag" src="" alt="Team 2 Flag">
           </div>
-          <div id="number" style="text-align: left;"><strong>Match Number:</strong> 58</div>
-          <div id="home-team" style="text-align: left;"><strong>Home Team:</strong> Royal Challengers Bengaluru</div>
-          <div id="away-team" style="text-align: left;"><strong>Away Team:</strong> Kolkata Knight Riders</div>
-          <div id="venue" style="text-align: left;"><strong>Venue:</strong> Bengaluru</div>
-          <div id="start-time" style="text-align: left;"><strong>Start Time:</strong> 7:30 PM</div>
+          <div id="number" style="text-align: left;"></div>
+          <div id="home-team" style="text-align: left;"></div>
+          <div id="away-team" style="text-align: left;"></div>
+          <div id="venue" style="text-align: left;"></div>
+          <div id="start-time" style="text-align: left;"></div>
       </div>
 
 
@@ -175,6 +80,9 @@
             }
         }
     </style>
+
+
+
     <script>
         // Function to get the query parameter from the URL
         function getQueryParam(param) {
@@ -195,7 +103,7 @@
                         <a href="${match.url}" target="_blank">
                             <img src="${match.poster}" alt="${match.team1} vs ${match.team2}">
                         </a>
-                        <a href="https://t.me/CreaseConnect_Bot" class="ad-btn" target="_blank">Place your ad here</a>
+                        <a href="https://t.me/valverdeae" class="ad-btn" target="_blank">Place your ad here</a>
                     `;
                 } else {
                     console.log('Match not found');
@@ -203,6 +111,12 @@
             })
             .catch(error => console.error('Error fetching JSON:', error));
     </script>
+
+
+
+
+
+
 </center>
       <script src="./stream.js"></script>
 
@@ -327,14 +241,14 @@ checkMatchAccess();
     popup.style.display = 'none';
   }
     </script>
-    <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 
 <br>
   <div id="popup" class="popup">
     <div class="popup-content">
       <h2>Support Us!</h2>
-      <p>Join Our Telegram Channel @Matcheslinks</p>
-      <button class="join-btn" onclick="window.open('https://t.me/Amatcheslinks', '_blank')">Join Now</button>
+      <p>Join Our Telegram Channel @matcheslinks</p>
+      <button class="join-btn" onclick="window.open('https://t.me/matcheslinks', '_blank')">Join Now</button>
       <button class="close-btn" onclick="closePopup()">Already Joined</button>
     </div>
   </div>
@@ -343,27 +257,5 @@ checkMatchAccess();
 <script src="https://nothing18.vercel.app/tata.js"></script>
 
 
-  
-  <div>
-        <div class="iplm-popup-overlay" id="iplm-popup-main">
-            <div class="iplm-popup-container">
-                <a id="iplm-poster-link" target="_blank" class="iplm-poster-wrapper">
-                    <img id="iplm-poster-image" src="" alt="Match Poster" class="iplm-poster-img">
-                </a>
-                <button class="iplm-close-button">Close</button>
-            </div>
-        </div>
-    </div><div id="vite" data-v-app=""><!----></div><script>(() => {
-        window.addoncropExtensions = window.addoncropExtensions || [];
-        window.addoncropExtensions.push({
-            mode: 'emulator',
-            emulator: 'Foxified',
-            extension: {
-                id: 44,
-                name: 'YouTube Downloader by Addoncrop',
-                version: '17.5.2',
-                date: 'March 25, 2025',
-            },
-            flixmateConnected: false,
-        });
-    })();</script></body>
+  </body>
+  </html>
